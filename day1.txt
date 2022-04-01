@@ -1,0 +1,50 @@
+2.TO FIND A Kth DIGIT:
+
+#include <iostream>
+
+int main()
+{
+int n,l,k,l1;
+int sum=0;
+std::cout<<"enter k;";
+std::cin>>k;
+std::cout<<"enter n";
+std::cin>>n;
+while(n>0){
+l=n%10;
+sum=sum*10+l;
+n=n/10;
+}
+std::cout<<sum;
+int c=1;
+while(sum>0)
+{
+l1=sum%10;
+if (c==k) {
+    std::cout<<"the kth value is;"<<l1;
+}
+c++;
+sum=sum/10;
+}
+
+}
+
+=================================================================================
+
+1.SUM OF THE DIGITS:
+
+#include<iostream>
+
+int main()
+{
+int rem,n;
+int sum=0;
+std::cout<<"enter the n value;";
+std::cin>>n;
+while(n>0){
+rem=n%10;
+sum=sum+rem;
+n=n/10;
+std::cout<<"enter sum value";<<sum;
+}
+}
