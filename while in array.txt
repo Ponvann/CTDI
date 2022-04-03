@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a[100];
+int n,i;
+cout<<"enter the n value;";
+cin>>n;
+i=0;
+  while(i<n)
+    {
+     a[i]=i*4;
+    cout<<a[i];
+    cout<<"\n";
+    i++;
+    }
+  }
+
+output:
+enter the n vaalue:8
+4
+8
+12
+16
+20
+24
+28
+32
+
